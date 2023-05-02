@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple-Calcullator</title>
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <input type="text" id="result-screen" placeholder="0" disabled>
+            <br>
+            <div class="number operation">
+                <button onclick="clearResult()">C</button>
+                <button onclick="backspace()">←</button>
+                <button onclick="insert('/')">/</button><button onclick="insert('+')">+</button>
+            </div>
+            <div class="number three">
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('-')">-</button>
+        
+            </div>
+            <div class="number two">
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('6')">6</button>
+                <button onclick="insert('*')">*</button>
+        
+            </div>
+            <div class="number one">
+                <button onclick="insert('0')">0</button>
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('2')">2</button>
+                <button onclick="insert('3')">3</button>
+            </div>
+           <div class="number result">
+            <button onclick="insert('.')">.</button>
+            <button onclick="calculate()" id="result">=</button>
+           </div>
+        </div>
+    </main>
+
+	<script src="script.js"></script>
+</body>
+</html>
